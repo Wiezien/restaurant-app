@@ -107,4 +107,30 @@ const seedData = [
     ],
     rating: 4.2,
   },
+  {
+    name: "Sizzling Steakhouse",
+    image:
+      "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+    menu: [
+      {
+        name: "Filet Mignon",
+        price: 22,
+        image:
+          "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+      },
+      {
+        name: "New York Strip",
+        price: 18,
+        image:
+          "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+      },
+      {
+        name: "Ribeye Steak",
+        price: 25,
+        image:
+          "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+      },
+    ],
+    rating: 4.7,
+  },
 ];
