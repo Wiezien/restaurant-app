@@ -133,4 +133,30 @@ const seedData = [
     ],
     rating: 4.7,
   },
+  {
+    name: "Asian Fusion",
+    image:
+      "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+    menu: [
+      {
+        name: "Sushi Platter",
+        price: 20,
+        image:
+          "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+      },
+      {
+        name: "Pad Thai",
+        price: 15,
+        image:
+          "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+      },
+      {
+        name: "Mongolian Beef",
+        price: 18,
+        image:
+          "https://media.geeksforgeeks.org/wp-content/uploads/20240110004602/pexels-chan-walrus-958545-(1).jpg",
+      },
+    ],
+    rating: 4.0,
+  },
 ];
