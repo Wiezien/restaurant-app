@@ -170,3 +170,19 @@ const seedDatabase = async () => {
     console.error("Error seeding the database:", error.message);
   }
 };
+
+seedDatabase();
+
+app.get("/restaurants", async (req, res) => {
+  try {
+    const restaurants = await Restaurant.find({});
+
+    res.json(restaurants);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
