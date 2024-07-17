@@ -160,3 +160,13 @@ const seedData = [
     rating: 4.0,
   },
 ];
+
+const seedDatabase = async () => {
+  try {
+    await Restaurant.deleteMany();
+    await Restaurant.insertMany(seedData);
+    console.log("Database seeded successfully.");
+  } catch (error) {
+    console.error("Error seeding the database:", error.message);
+  }
+};
