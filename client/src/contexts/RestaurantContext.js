@@ -21,4 +21,7 @@ const RestaurantProvider = ({ children }) => {
 
     fetchRestaurants();
   }, []);
+  
+  const handleAddItems = (dish) => {
+    console.log("Dish:", dish);
 };
