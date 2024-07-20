@@ -8,4 +8,17 @@ const RestaurantProvider = ({ children }) => {
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
   const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    const fetchRestaurants = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/restaurants");
+        setRestaurants(response.data);
+      } catch (error) {
+        console.error("Error fetching restaurants:", error.message);
+      }
+    };
+
+    fetchRestaurants();
+  }, []);
 };
