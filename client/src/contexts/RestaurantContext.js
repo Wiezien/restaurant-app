@@ -42,5 +42,11 @@ const RestaurantProvider = ({ children }) => {
     };
 
     setCartItems(updatedCartItems);
+  } else {
+    console.log("Dish does not exist in the cart. Adding to the cart.");
+    console.log("cart", cartItems.length);
+
+    setCartItems([...cartItems, { ...dish, quantity: 1 }]);
   }
+  setTotalPrice((prev) => prev + dish.price);
 };
