@@ -35,5 +35,12 @@ const RestaurantProvider = ({ children }) => {
       `Dish already exists in the cart. 
         You may want to update the quantity.`
     );
+    const updatedCartItems = [...cartItems];
+    updatedCartItems[existingItemIndex] = {
+      ...updatedCartItems[existingItemIndex],
+      quantity: updatedCartItems[existingItemIndex].quantity + 1,
+    };
+
+    setCartItems(updatedCartItems);
   }
 };
