@@ -25,4 +25,15 @@ const RestaurantProvider = ({ children }) => {
   const handleAddItems = (dish) => {
     console.log("Dish:", dish);
   };
+
+  const existingItemIndex = cartItems.findIndex(
+    (item) => item._id === dish._id
+  );
+
+  if (existingItemIndex !== -1) {
+    console.log(
+      `Dish already exists in the cart. 
+        You may want to update the quantity.`
+    );
+  }
 };
