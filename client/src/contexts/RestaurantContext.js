@@ -50,3 +50,11 @@ const RestaurantProvider = ({ children }) => {
   }
   setTotalPrice((prev) => prev + dish.price);
 };
+
+const handleRemoveItems = (dish) => {
+  console.log("Dish ID to remove:", dish);
+
+  const existingItemIndex = cartItems.findIndex(
+    (item) => item._id === dish._id
+  );
+};
