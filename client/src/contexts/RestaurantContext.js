@@ -57,4 +57,12 @@ const handleRemoveItems = (dish) => {
   const existingItemIndex = cartItems.findIndex(
     (item) => item._id === dish._id
   );
+  if (existingItemIndex !== -1) {
+    console.log(
+      `Dish exists in the cart. You may want 
+         to decrease the quantity or remove it.`
+    );
+
+    const updatedCartItems = [...cartItems];
+  }
 };
