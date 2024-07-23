@@ -64,5 +64,11 @@ const handleRemoveItems = (dish) => {
     );
 
     const updatedCartItems = [...cartItems];
+    if (updatedCartItems[existingItemIndex].quantity > 1) {
+      updatedCartItems[existingItemIndex] = {
+        ...updatedCartItems[existingItemIndex],
+        quantity: updatedCartItems[existingItemIndex].quantity - 1,
+      };
+    }
   }
 };
