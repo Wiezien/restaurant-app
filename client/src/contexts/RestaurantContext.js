@@ -70,5 +70,7 @@ const handleRemoveItems = (dish) => {
         quantity: updatedCartItems[existingItemIndex].quantity - 1,
       };
     }
+  } else {
+    updatedCartItems.splice(existingItemIndex, 1);
   }
 };
