@@ -78,3 +78,12 @@ const handleRemoveItems = (dish) => {
     console.log("Dish does not exist in the cart.");
   }
 };
+
+const value = {
+  restaurants,
+  selectedRestaurant,
+  setSelectedRestaurant,
+  handleAddItems,
+  handleRemoveItems,
+  totalPrice,
+};
