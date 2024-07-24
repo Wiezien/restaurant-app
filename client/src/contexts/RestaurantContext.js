@@ -69,8 +69,12 @@ const handleRemoveItems = (dish) => {
         ...updatedCartItems[existingItemIndex],
         quantity: updatedCartItems[existingItemIndex].quantity - 1,
       };
+    } else {
+      updatedCartItems.splice(existingItemIndex, 1);
     }
+    setCartItems(updatedCartItems);
+    setTotalPrice((prev) => prev - dish.price);
   } else {
-    updatedCartItems.splice(existingItemIndex, 1);
+    console.log("Dish does not exist in the cart.");
   }
 };
