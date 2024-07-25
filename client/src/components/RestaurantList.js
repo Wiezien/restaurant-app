@@ -1,3 +1,5 @@
+import React, { useContext, useState, useEffect } from "react";
+
 const RestaurantList = () => {
   const { restaurants, setSelectedRestaurant } = useContext(RestaurantContext);
   const [filteredRestaurants, setFilteredRestaurants] = useState([
