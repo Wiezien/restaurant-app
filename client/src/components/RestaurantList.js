@@ -17,3 +17,7 @@ const handleRestaurantClick = (restaurantId) => {
     restaurants.find((restaurant) => restaurant._id === restaurantId)
   );
 };
+
+const handleRatingChange = (e) => {
+  setRatingFilter(e.target.value);
+};
