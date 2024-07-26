@@ -41,4 +41,6 @@ const filterRestaurants = () => {
       restaurant.name.toLowerCase().includes(searchLower)
     );
   }
+
+  setFilteredRestaurants(filtered);
 };
