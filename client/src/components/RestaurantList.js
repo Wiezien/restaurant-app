@@ -34,4 +34,11 @@ const filterRestaurants = () => {
       (restaurant) => restaurant.rating >= parseFloat(ratingFilter)
     );
   }
+
+  if (searchTerm) {
+    const searchLower = searchTerm.toLowerCase();
+    filtered = filtered.filter((restaurant) =>
+      restaurant.name.toLowerCase().includes(searchLower)
+    );
+  }
 };
