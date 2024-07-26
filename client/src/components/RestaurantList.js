@@ -21,3 +21,17 @@ const handleRestaurantClick = (restaurantId) => {
 const handleRatingChange = (e) => {
   setRatingFilter(e.target.value);
 };
+
+const handleSearchChange = (e) => {
+  setSearchTerm(e.target.value);
+};
+
+const filterRestaurants = () => {
+  let filtered = restaurants;
+
+  if (ratingFilter) {
+    filtered = filtered.filter(
+      (restaurant) => restaurant.rating >= parseFloat(ratingFilter)
+    );
+  }
+};
