@@ -44,3 +44,21 @@ const filterRestaurants = () => {
 
   setFilteredRestaurants(filtered);
 };
+
+return (
+  <div>
+    <h2>Restaurant List</h2>
+    <div>
+      <label htmlFor="rating" className="filter-label">
+        Filter by Rating:
+      </label>
+      <input
+        type="number"
+        id="rating"
+        value={ratingFilter}
+        onChange={handleRatingChange}
+        className="filter-input"
+      />
+    </div>
+  </div>
+);
