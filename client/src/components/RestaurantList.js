@@ -49,7 +49,7 @@ const filterRestaurants = () => {
 
 return (
   <div className="container">
-    <h2>Restaurant List</h2>
+    <h2 className="header">Restaurant List</h2>
     <div>
       <label htmlFor="rating" className="filter-label">
         Filter by Rating:
