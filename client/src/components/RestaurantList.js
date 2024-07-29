@@ -1,4 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
+import RestaurantCard from "./RestaurantCard";
+import { RestaurantContext } from "../contexts/RestaurantContext";
 
 const RestaurantList = () => {
   const { restaurants, setSelectedRestaurant } = useContext(RestaurantContext);
