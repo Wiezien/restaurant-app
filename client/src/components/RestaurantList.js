@@ -61,6 +61,16 @@ return (
         onChange={handleRatingChange}
         className="filter-input"
       />
+      <label htmlFor="search" className="filter-label">
+        Search by Name:
+      </label>
+      <input
+        type="text"
+        id="search"
+        value={props.searchTerm}
+        onChange={props.handleSearchChange}
+        className="filter-input"
+      />
     </div>
   </div>
 );
