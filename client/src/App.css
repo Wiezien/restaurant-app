@@ -12,3 +12,14 @@
 
   border-radius: 15px;
 }
+
+.filter-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-container label {
+  font-size: 18px;
+  color: #555;
+}
