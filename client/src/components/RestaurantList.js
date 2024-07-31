@@ -87,3 +87,5 @@ return (
     </div>
   </div>
 );
+
+export default RestaurantList;
