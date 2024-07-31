@@ -67,8 +67,8 @@ return (
       <input
         type="text"
         id="search"
-        value={props.searchTerm}
-        onChange={props.handleSearchChange}
+        value={searchTerm}
+        onChange={handleSearchChange}
         className="filter-input"
       />
     </div>
