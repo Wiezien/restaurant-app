@@ -72,7 +72,7 @@ return (
         className="filter-input"
       />
     </div>
-    <div>
+    <div className="restaurant-card-container">
       {filteredRestaurants.map(function (restaurant) {
         return (
           <RestaurantCard
