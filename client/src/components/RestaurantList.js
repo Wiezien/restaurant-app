@@ -72,5 +72,18 @@ return (
         className="filter-input"
       />
     </div>
+    <div>
+      {filteredRestaurants.map(function (restaurant) {
+        return (
+          <RestaurantCard
+            key={restaurant._id}
+            restaurant={restaurant}
+            onClick={function () {
+              handleRestaurantClick(restaurant._id);
+            }}
+          />
+        );
+      })}
+    </div>
   </div>
 );
