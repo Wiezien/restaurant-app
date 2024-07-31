@@ -28,3 +28,10 @@
   padding: 8px;
   font-size: 16px;
 }
+
+.restaurant-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
