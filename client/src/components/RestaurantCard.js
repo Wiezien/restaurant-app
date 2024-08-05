@@ -11,3 +11,5 @@ const RestaurantCard = ({ restaurant, onClick }) => {
     </div>
   );
 };
+
+export default RestaurantCard;
