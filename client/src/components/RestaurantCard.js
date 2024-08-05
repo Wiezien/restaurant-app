@@ -1,3 +1,5 @@
+import React from "react";
+
 const RestaurantCard = ({ restaurant, onClick }) => {
   return (
     <div onClick={onClick}>
