@@ -49,3 +49,10 @@
 .card:hover {
   transform: scale(1.05);
 }
+
+.image-container {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 150px;
+}
