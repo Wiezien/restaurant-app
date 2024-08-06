@@ -4,7 +4,7 @@ const RestaurantCard = ({ restaurant, onClick }) => {
   return (
     <div className="card" onClick={onClick}>
       <h3>{restaurant.name}</h3>
-      <div>
+      <div className="image-container">
         <img src={restaurant.image} alt={restaurant.name} />
       </div>
       <p>Rating: {restaurant.rating}</p>
