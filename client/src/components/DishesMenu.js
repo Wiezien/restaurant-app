@@ -9,7 +9,7 @@ const DishesMenu = () => {
     <div>
       <h2>Menu</h2>
       {selectedRestaurant && (
-        <div>
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
           {selectedRestaurant.menu.map((dish) => (
             <DishCard key={dish.name} dish={dish} />
           ))}
