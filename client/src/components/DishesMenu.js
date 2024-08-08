@@ -8,6 +8,13 @@ const DishesMenu = () => {
   return (
     <div>
       <h2>Menu</h2>
+      {selectedRestaurant && (
+        <div>
+          {selectedRestaurant.menu.map((dish) => (
+            <DishCard key={dish.name} dish={dish} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
