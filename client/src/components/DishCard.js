@@ -7,6 +7,10 @@ const DishCard = ({ dish }) => {
   const handleAdd = () => {
     handleAddItems(dish);
   };
+
+  const handleRemove = () => {
+    handleRemoveItems(dish);
+  };
 };
 
 export default DishCard;
