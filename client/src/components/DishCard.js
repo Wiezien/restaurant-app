@@ -11,6 +11,12 @@ const DishCard = ({ dish }) => {
   const handleRemove = () => {
     handleRemoveItems(dish);
   };
+
+  return (
+    <div>
+      <h3>{dish.name}</h3>
+    </div>
+  );
 };
 
 export default DishCard;
