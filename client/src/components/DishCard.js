@@ -15,6 +15,7 @@ const DishCard = ({ dish }) => {
   return (
     <div>
       <h3>{dish.name}</h3>
+      <img src={dish.image} alt="" />
     </div>
   );
 };
