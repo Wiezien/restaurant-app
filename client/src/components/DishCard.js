@@ -13,7 +13,7 @@ const DishCard = ({ dish }) => {
   };
 
   return (
-    <div>
+    <div className="dish-card">
       <h3>{dish.name}</h3>
       <img src={dish.image} alt="" />
       <p>Price: ${dish.price}</p>
