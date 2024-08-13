@@ -63,3 +63,16 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+.dish-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
