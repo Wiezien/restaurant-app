@@ -17,6 +17,10 @@ const DishCard = ({ dish }) => {
       <h3>{dish.name}</h3>
       <img src={dish.image} alt="" />
       <p>Price: ${dish.price}</p>
+      <div>
+        <button onClick={handleAdd}>+</button>
+        <button onClick={handleRemove}>-</button>
+      </div>
     </div>
   );
 };
