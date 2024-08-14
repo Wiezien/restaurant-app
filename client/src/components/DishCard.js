@@ -30,17 +30,6 @@ const DishCard = ({ dish }) => {
       </div>
     </div>
   );
-  // return (
-  //   <div className="dish-card">
-  //     <h3>{dish.name}</h3>
-  //     <img src={dish.image} alt="" />
-  //     <p>Price: ${dish.price}</p>
-  //     <div style={{ width: "40%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-  //       <button onClick={handleAdd}>+</button>
-  //       <button onClick={handleRemove}>-</button>
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default DishCard;
