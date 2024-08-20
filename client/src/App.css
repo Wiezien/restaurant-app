@@ -132,3 +132,7 @@ button {
   overflow-y: auto;
   z-index: 1000;
 }
+
+.cart-content {
+  padding: 16px;
+}

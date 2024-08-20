@@ -4,9 +4,9 @@ import { RestaurantContext } from "../contexts/RestaurantContext";
 const Cart = () => {
   const { totalPrice } = useContext(RestaurantContext);
   return (
-    <div>
+    <div className="cart-container">
       <h2>Cart</h2>
-      <div className="cart-container">
+      <div className="cart-content">
         {cartItems.map((item) => (
           <div key={item.id}>
             {item.name} - ${item.price}
