@@ -133,6 +133,11 @@ button {
   z-index: 1000;
 }
 
+h2 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
 .cart-content {
   padding: 16px;
 }
