@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { RestaurantContext } from "../contexts/RestaurantContext";
+import "../Cart.css";
 
 const Cart = () => {
   const { totalPrice } = useContext(RestaurantContext);
